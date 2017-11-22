@@ -37,7 +37,7 @@ def turn(board)
     return display_board(board)
   else
     puts "Please try again (1-9): "
-
+    turn(board)
   end
 end
 
