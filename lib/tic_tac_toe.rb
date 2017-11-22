@@ -37,7 +37,8 @@ def turn(board)
     return display_board(board)
   else
     puts "Please try again (1-9): "
-    turn(board)
+    input = gets.strip
+    index = input_to_index(input)
   end
 end
 
