@@ -16,6 +16,8 @@ def play(board)
   if won?(board)
     winner = winner(board)
     p "Congratulations #{winner}!"
+  end
+  
 end
 
 
