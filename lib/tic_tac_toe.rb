@@ -39,6 +39,12 @@ def turn(board)
     puts "Please try again (1-9): "
     input = gets.strip
     index = input_to_index(input)
+    if valid_move?(board, index)
+      move(board, index, current_player)
+      return display_board(board)
+    else
+      return turn(board)
+    end
   end
 end
 
