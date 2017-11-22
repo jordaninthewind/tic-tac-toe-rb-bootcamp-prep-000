@@ -32,7 +32,7 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board, index)
-    move(board, index)
+    move(board, index, x)
     return display_board(board)
   else
     puts "Please try again (1-9): "
