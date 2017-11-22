@@ -12,6 +12,10 @@ def play(board)
   while !(over?(board))
     turn(board)
   end
+
+  if won?(board)
+    winner = winner(board)
+    p "Congratulations #{winner}!"
 end
 
 
